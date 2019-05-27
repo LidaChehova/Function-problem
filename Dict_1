@@ -1,0 +1,7 @@
+list=[i.lower() for i in input().split( )]
+d={}
+n=1
+for i in list:
+    d[i]=list.count(i)
+for i, n in d.items():
+    print(i, n)

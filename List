@@ -1,0 +1,10 @@
+a=[int(i) for i in input().split()]
+a.sort()
+b=[]
+for j in a:
+  if j in b:
+    continue 
+  y=a.count(j)
+  if y>1:
+    b+=[j]
+print(*b)

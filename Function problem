@@ -1,0 +1,9 @@
+def modify_list(l):
+    x=len(l)-1
+    for i in l[::-1]:
+        if i%2==0:
+           i=i//2
+           l[x]=i
+        else:
+            l.remove(i)
+        x-=1
